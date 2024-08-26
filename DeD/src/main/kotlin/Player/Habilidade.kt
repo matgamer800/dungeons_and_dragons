@@ -17,6 +17,7 @@ class Habilidade {
         this.Sabedoria = 0
         this.Carisma = 0
         var cust:Int = 27
+        
 
         for (i in 0..6) {
             when (i) {
@@ -29,6 +30,10 @@ class Habilidade {
             }
             if(pontos > cust){
                 pontos = 0
+            }
+            //para pontos maiores que os custos maiores, deixamos em 9
+            else if (pontos > 9){
+                pontos = 9
             }
             when (pontos){
                 0 -> pontos = 8
