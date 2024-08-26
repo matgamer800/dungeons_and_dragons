@@ -44,6 +44,12 @@ class Player {
         println()
         println("Nivel: "+ this.Nivel)
     }
+    /*
+        Apenas para ter a ideia:
+        Não deixar que realize o import na main
+        deve-se utilizar when para definir classes e racas
+        
+    */
 
 
 
