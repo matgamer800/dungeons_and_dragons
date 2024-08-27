@@ -10,6 +10,7 @@ class Habilidade {
 
     constructor(forc:Int,dest:Int,const:Int,inte:Int,sabe:Int,cari:Int){
         var pontos:Int = 0
+        var pontosAt:Int = 0
         this.Forca = 0
         this.Destreza = 0
         this.Constituicao = 0
@@ -36,40 +37,40 @@ class Habilidade {
                 pontos = 9
             }
             when (pontos){
-                0 -> pontos = 8
-                1 -> pontos = 9
-                2 -> pontos = 10
-                3 -> pontos = 11
-                4 -> pontos = 12
-                5 -> pontos = 13
-                7 -> pontos = 14
-                9 -> pontos = 15
+                0 -> pontosAt = 8
+                1 -> pontosAt = 9
+                2 -> pontosAt = 10
+                3 -> pontosAt = 11
+                4 -> pontosAt = 12
+                5 -> pontosAt = 13
+                7 -> pontosAt = 14
+                9 -> pontosAt = 15
             }
 
             when (i){
                 1 -> {
-                    cust = cust - forc
-                    this.Forca = pontos
+                    cust = cust - pontos
+                    this.Forca = pontosAt
                 }
                 2 -> {
-                    cust = cust - dest
-                    this.Destreza = pontos
+                    cust = cust - pontos
+                    this.Destreza = pontosAt
                 }
                 3 -> {
-                    cust = cust - const
-                    this.Constituicao = pontos
+                    cust = cust - pontos
+                    this.Constituicao = pontosAt
                 }
                 4 -> {
-                    cust = cust - inte
-                    this.Inteligencia = pontos
+                    cust = cust - pontos
+                    this.Inteligencia = pontosAt
                 }
                 5 -> {
-                    cust = cust - sabe
-                    this.Sabedoria = pontos
+                    cust = cust - pontos
+                    this.Sabedoria = pontosAt
                 }
                 6 -> {
-                    cust = cust - cari
-                    this.Carisma = pontos
+                    cust = cust - pontos
+                    this.Carisma = pontosAt
                 }
             }
 
